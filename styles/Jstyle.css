@@ -12120,6 +12120,20 @@
   transform: scale(1.1) !important;
 }
 
+.darkest-navy {
+  color: #11243f !important;
+}
+.bg-darkest-navy {
+  background-color: #11243f !important;
+}
+.pointer-darkest-navy:hover,
+.pointer-darkest-navy.active {
+  cursor: pointer !important;
+  color: #11243f !important;
+  transition: transform 0.1s ease-in-out !important;
+  transform: scale(1.1) !important;
+}
+
 .secondary {
   color: #6c757d !important;
 }
