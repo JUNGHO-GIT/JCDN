@@ -12397,7 +12397,7 @@
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
-  animation: fadeInOut 0.5s ease-in-out forwards !important;
+  animation: fadeIn 0.2s ease-in !important;
   z-index: 999999 !important;
 }
 .loader {
