@@ -12350,12 +12350,29 @@
 }
 
 /** 100. keyframes ********************************************************************************/
-@keyframes loaderAnimation {
+@keyframes initLoader {
   0% {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(-3px);
   }
   100% {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes spinLoader {
+  0% {
+    transform: rotate(0deg)
+  }
+  50% {
+    transform: rotate(180deg)
+  }
+  100% {
+    transform: rotate(360deg)
   }
 }
 @keyframes fadeIn {
@@ -12370,17 +12387,6 @@
   100% {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-@keyframes fadeInOut {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
   }
 }
 @keyframes shake {
@@ -12412,12 +12418,12 @@
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
-  animation: fadeIn 0.2s ease-in !important;
+  animation: initLoader 0.0000001ms ease-in-out !important;
   z-index: 999999 !important;
 }
 .loader {
-  width: 50px !important;
-  height: 50px !important;
+  width: 80px !important;
+  height: 80px !important;
   position: relative !important;
   margin: 0 auto !important;
   display: flex !important;
@@ -12426,7 +12432,7 @@
   border-radius: 50% !important;
   border-top: 3px solid #1976D2 !important;
   border-right: 3px solid transparent !important;
-  animation: loaderAnimation 0.5s linear infinite !important;
+  animation: spinLoader 0.5s linear infinite !important;
   z-index: 1000000 !important;
 }
 .fadeIn {
