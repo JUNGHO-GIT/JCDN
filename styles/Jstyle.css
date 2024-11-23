@@ -11357,7 +11357,7 @@
 
 /** 9-1. display **********************************************************************************/
 .d-none {
-  display: none !important;
+  display: none;
 }
 .d-fill {
   display: -webkit-fill-available !important;
