@@ -12,7 +12,7 @@ html, body {
   -moz-osx-font-smoothing: grayscale !important;
   -webkit-text-size-adjust: 100% !important;
   -ms-text-size-adjust: 100% !important;
-  font-family: Pretendard, "Noto Sans KR", Roboto, sans-serif !important;
+  font-family: "Pretendard Variable", Pretendard, "Noto Sans KR", Roboto, sans-serif !important;
 }
 
 /** 1. xxs (0 - 330px) ****************************************************************************/
