@@ -11910,6 +11910,19 @@
 }
 
 /** 99. color *************************************************************************************/
+.transparent {
+  color: transparent !important;
+}
+.bg-transparent {
+  background-color: transparent !important;
+}
+.pointer-transparent {
+  cursor: pointer !important;
+  color: transparent !important;
+  transition: transform 0.2s ease-in-out !important;
+  transform: scale(1.1) !important;
+}
+
 .red {
   color: #ff0000 !important;
 }
@@ -11920,20 +11933,6 @@
 .pointer-red.active {
   cursor: pointer !important;
   color: #ff0000 !important;
-  transition: transform 0.2s ease-in-out !important;
-  transform: scale(1.1) !important;
-}
-
-.burgundy {
-  color: #973131 !important;
-}
-.bg-burgundy {
-  background-color: #973131 !important;
-}
-.pointer-burgundy:hover,
-.pointer-burgundy.active {
-  cursor: pointer !important;
-  color: #973131 !important;
   transition: transform 0.2s ease-in-out !important;
   transform: scale(1.1) !important;
 }
@@ -11952,58 +11951,30 @@
   transform: scale(1.1) !important;
 }
 
-.warning {
-  color: #F59E0B !important;
+.burgundy {
+  color: #973131 !important;
 }
-.bg-warning {
-  background-color: #F59E0B !important;
+.bg-burgundy {
+  background-color: #973131 !important;
 }
-.pointer-warning:hover,
-.pointer-warning.active {
+.pointer-burgundy:hover,
+.pointer-burgundy.active {
   cursor: pointer !important;
-  color: #F59E0B !important;
+  color: #973131 !important;
   transition: transform 0.2s ease-in-out !important;
   transform: scale(1.1) !important;
 }
 
-.orange {
-  color: #F59E0B !important;
+.light-ivory {
+  color: #ede7e3 !important;
 }
-.bg-orange {
-  background-color: #F59E0B !important;
+.bg-light-ivory {
+  background-color: #ede7e3 !important;
 }
-.pointer-orange:hover,
-.pointer-orange.active {
+.pointer-light-ivory:hover,
+.pointer-light-ivory.active {
   cursor: pointer !important;
-  color: #F59E0B !important;
-  transition: transform 0.2s ease-in-out !important;
-  transform: scale(1.1) !important;
-}
-
-.yellow {
-  color: #FBBF24 !important;
-}
-.bg-yellow {
-  background-color: #FBBF24 !important;
-}
-.pointer-yellow:hover,
-.pointer-yellow.active {
-  cursor: pointer !important;
-  color: #FBBF24 !important;
-  transition: transform 0.2s ease-in-out !important;
-  transform: scale(1.1) !important;
-}
-
-.light-yellow {
-  color: #e9e0d1 !important;
-}
-.bg-light-yellow {
-  background-color: #e9e0d1 !important;
-}
-.pointer-light-yellow:hover,
-.pointer-light-yellow.active {
-  cursor: pointer !important;
-  color: #e9e0d1 !important;
+  color: #ede7e3 !important;
   transition: transform 0.2s ease-in-out !important;
   transform: scale(1.1) !important;
 }
@@ -12022,16 +11993,58 @@
   transform: scale(1.1) !important;
 }
 
-.ivory-light {
-  color: #ede7e3 !important;
+.light-yellow {
+  color: #e9e0d1 !important;
 }
-.bg-ivory-light {
-  background-color: #ede7e3 !important;
+.bg-light-yellow {
+  background-color: #e9e0d1 !important;
 }
-.pointer-ivory-light:hover,
-.pointer-ivory-light.active {
+.pointer-light-yellow:hover,
+.pointer-light-yellow.active {
   cursor: pointer !important;
-  color: #ede7e3 !important;
+  color: #e9e0d1 !important;
+  transition: transform 0.2s ease-in-out !important;
+  transform: scale(1.1) !important;
+}
+
+.yellow {
+  color: #FBBF24 !important;
+}
+.bg-yellow {
+  background-color: #FBBF24 !important;
+}
+.pointer-yellow:hover,
+.pointer-yellow.active {
+  cursor: pointer !important;
+  color: #FBBF24 !important;
+  transition: transform 0.2s ease-in-out !important;
+  transform: scale(1.1) !important;
+}
+
+.orange {
+  color: #F59E0B !important;
+}
+.bg-orange {
+  background-color: #F59E0B !important;
+}
+.pointer-orange:hover,
+.pointer-orange.active {
+  cursor: pointer !important;
+  color: #F59E0B !important;
+  transition: transform 0.2s ease-in-out !important;
+  transform: scale(1.1) !important;
+}
+
+.warning {
+  color: #F59E0B !important;
+}
+.bg-warning {
+  background-color: #F59E0B !important;
+}
+.pointer-warning:hover,
+.pointer-warning.active {
+  cursor: pointer !important;
+  color: #F59E0B !important;
   transition: transform 0.2s ease-in-out !important;
   transform: scale(1.1) !important;
 }
@@ -12120,6 +12133,20 @@
   transform: scale(1.1) !important;
 }
 
+.dark-navy {
+  color: #1f3a80 !important;
+}
+.bg-dark-navy {
+  background-color: #1f3a80 !important;
+}
+.pointer-dark-navy:hover,
+.pointer-dark-navy.active {
+  cursor: pointer !important;
+  color: #1f3a80 !important;
+  transition: transform 0.1s ease-in-out !important;
+  transform: scale(1.1) !important;
+}
+
 .darkest-navy {
   color: #11243f !important;
 }
@@ -12131,20 +12158,6 @@
   cursor: pointer !important;
   color: #11243f !important;
   transition: transform 0.1s ease-in-out !important;
-  transform: scale(1.1) !important;
-}
-
-.secondary {
-  color: #6c757d !important;
-}
-.bg-secondary {
-  background-color: #6c757d !important;
-}
-.pointer-secondary:hover,
-.pointer-secondary.active {
-  cursor: pointer !important;
-  color: #6c757d !important;
-  transition: transform 0.2s ease-in-out !important;
   transform: scale(1.1) !important;
 }
 
@@ -12232,6 +12245,20 @@
   transform: scale(1.1) !important;
 }
 
+.secondary {
+  color: #6c757d !important;
+}
+.bg-secondary {
+  background-color: #6c757d !important;
+}
+.pointer-secondary:hover,
+.pointer-secondary.active {
+  cursor: pointer !important;
+  color: #6c757d !important;
+  transition: transform 0.2s ease-in-out !important;
+  transform: scale(1.1) !important;
+}
+
 .light-black {
   color: #3a3a3a !important;
 }
@@ -12256,19 +12283,6 @@
 .pointer-black.active {
   cursor: pointer !important;
   color: #111111 !important;
-  transition: transform 0.2s ease-in-out !important;
-  transform: scale(1.1) !important;
-}
-
-.transparent {
-  color: transparent !important;
-}
-.bg-transparent {
-  background-color: transparent !important;
-}
-.pointer-transparent {
-  cursor: pointer !important;
-  color: transparent !important;
   transition: transform 0.2s ease-in-out !important;
   transform: scale(1.1) !important;
 }
@@ -12321,7 +12335,7 @@
   display: inline-block;
   font-weight: 600;
 }
-.horizontal-text {
+.horizontal {
   writing-mode: horizontal-tb !important;
   text-orientation: mixed !important;
   white-space: nowrap !important;
@@ -12333,19 +12347,6 @@
 }
 .locked {
   border: 2px solid #bdbdbd !important;
-}
-.transform-none {
-  transform: none !important;
-}
-.animation-none {
-  animation: none !important;
-}
-.hover {
-  cursor: pointer !important;
-  transition: transform 0.3s ease-in-out !important;
-}
-.hover:hover {
-  transform: scale(1.08) !important;
 }
 
 /** 100. keyframes ********************************************************************************/
@@ -12436,6 +12437,13 @@
 }
 .shake {
   animation: shake 0.7s cubic-bezier(.36,.07,.19,.97) both !important;
+}
+.hover {
+  cursor: pointer !important;
+  transition: transform 0.3s ease-in-out !important;
+}
+.hover:hover {
+  transform: scale(1.08) !important;
 }
 
 /** scrollbar *************************************************************************************/
