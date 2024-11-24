@@ -6,6 +6,14 @@
   "license": "Apache-2.0",
   "private": true,
   "scripts": {
-    "push": "node push.cjs"
+    "push": "node push.cjs",
+    "merge": "node merge.cjs"
+  },
+  "devDependencies": {
+    "@types/clean-css": "^4.2.11",
+    "@types/node": "^22.9.3"
+  },
+  "dependencies": {
+    "clean-css": "^5.3.3"
   }
 }
