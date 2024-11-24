@@ -1,6 +1,6 @@
 # gitignore
 
-/node_modules/
+node_modules/
 **/node_modules/
 
 /build/
@@ -15,4 +15,4 @@
 client/.cache/
 client/.webpack_cache/
 
-pakcage-lock.json
+package-lock.json
