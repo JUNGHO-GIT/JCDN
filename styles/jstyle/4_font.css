@@ -1,0 +1,247 @@
+@charset "UTF-8";
+
+/**************************************************************************************************/
+/** 1. FONT-SIZE **********************************************************************************/
+/**************************************************************************************************/
+/** 1-1. px [0 - 100] **/
+  .fs-0px {font-size: 0px!important;}
+  .fs-1px {font-size: 1px!important;}
+  .fs-2px {font-size: 2px!important;}
+  .fs-3px {font-size: 3px!important;}
+  .fs-4px {font-size: 4px!important;}
+  .fs-5px {font-size: 5px!important;}
+  .fs-6px {font-size: 6px!important;}
+  .fs-7px {font-size: 7px!important;}
+  .fs-8px {font-size: 8px!important;}
+  .fs-9px {font-size: 9px!important;}
+  .fs-10px {font-size: 10px!important;}
+  .fs-11px {font-size: 11px!important;}
+  .fs-12px {font-size: 12px!important;}
+  .fs-13px {font-size: 13px!important;}
+  .fs-14px {font-size: 14px!important;}
+  .fs-15px {font-size: 15px!important;}
+  .fs-16px {font-size: 16px!important;}
+  .fs-17px {font-size: 17px!important;}
+  .fs-18px {font-size: 18px!important;}
+  .fs-19px {font-size: 19px!important;}
+  .fs-20px {font-size: 20px!important;}
+  .fs-21px {font-size: 21px!important;}
+  .fs-22px {font-size: 22px!important;}
+  .fs-23px {font-size: 23px!important;}
+  .fs-24px {font-size: 24px!important;}
+  .fs-25px {font-size: 25px!important;}
+  .fs-26px {font-size: 26px!important;}
+  .fs-27px {font-size: 27px!important;}
+  .fs-28px {font-size: 28px!important;}
+  .fs-29px {font-size: 29px!important;}
+  .fs-30px {font-size: 30px!important;}
+  .fs-31px {font-size: 31px!important;}
+  .fs-32px {font-size: 32px!important;}
+  .fs-33px {font-size: 33px!important;}
+  .fs-34px {font-size: 34px!important;}
+  .fs-35px {font-size: 35px!important;}
+  .fs-36px {font-size: 36px!important;}
+  .fs-37px {font-size: 37px!important;}
+  .fs-38px {font-size: 38px!important;}
+  .fs-39px {font-size: 39px!important;}
+  .fs-40px {font-size: 40px!important;}
+  .fs-41px {font-size: 41px!important;}
+  .fs-42px {font-size: 42px!important;}
+  .fs-43px {font-size: 43px!important;}
+  .fs-44px {font-size: 44px!important;}
+  .fs-45px {font-size: 45px!important;}
+  .fs-46px {font-size: 46px!important;}
+  .fs-47px {font-size: 47px!important;}
+  .fs-48px {font-size: 48px!important;}
+  .fs-49px {font-size: 49px!important;}
+  .fs-50px {font-size: 50px!important;}
+  .fs-51px {font-size: 51px!important;}
+  .fs-52px {font-size: 52px!important;}
+  .fs-53px {font-size: 53px!important;}
+  .fs-54px {font-size: 54px!important;}
+  .fs-55px {font-size: 55px!important;}
+  .fs-56px {font-size: 56px!important;}
+  .fs-57px {font-size: 57px!important;}
+  .fs-58px {font-size: 58px!important;}
+  .fs-59px {font-size: 59px!important;}
+  .fs-60px {font-size: 60px!important;}
+  .fs-61px {font-size: 61px!important;}
+  .fs-62px {font-size: 62px!important;}
+  .fs-63px {font-size: 63px!important;}
+  .fs-64px {font-size: 64px!important;}
+  .fs-65px {font-size: 65px!important;}
+  .fs-66px {font-size: 66px!important;}
+  .fs-67px {font-size: 67px!important;}
+  .fs-68px {font-size: 68px!important;}
+  .fs-69px {font-size: 69px!important;}
+  .fs-70px {font-size: 70px!important;}
+  .fs-71px {font-size: 71px!important;}
+  .fs-72px {font-size: 72px!important;}
+  .fs-73px {font-size: 73px!important;}
+  .fs-74px {font-size: 74px!important;}
+  .fs-75px {font-size: 75px!important;}
+  .fs-76px {font-size: 76px!important;}
+  .fs-77px {font-size: 77px!important;}
+  .fs-78px {font-size: 78px!important;}
+  .fs-79px {font-size: 79px!important;}
+  .fs-80px {font-size: 80px!important;}
+  .fs-81px {font-size: 81px!important;}
+  .fs-82px {font-size: 82px!important;}
+  .fs-83px {font-size: 83px!important;}
+  .fs-84px {font-size: 84px!important;}
+  .fs-85px {font-size: 85px!important;}
+  .fs-86px {font-size: 86px!important;}
+  .fs-87px {font-size: 87px!important;}
+  .fs-88px {font-size: 88px!important;}
+  .fs-89px {font-size: 89px!important;}
+  .fs-90px {font-size: 90px!important;}
+  .fs-91px {font-size: 91px!important;}
+  .fs-92px {font-size: 92px!important;}
+  .fs-93px {font-size: 93px!important;}
+  .fs-94px {font-size: 94px!important;}
+  .fs-95px {font-size: 95px!important;}
+  .fs-96px {font-size: 96px!important;}
+  .fs-97px {font-size: 97px!important;}
+  .fs-98px {font-size: 98px!important;}
+  .fs-99px {font-size: 99px!important;}
+  .fs-100px {font-size: 100px!important;}
+/**/
+
+/** 1-2. rem [0 - 4] **/
+  .fs-0-1rem {font-size: 0.1rem!important;}
+  .fs-0-2rem {font-size: 0.2rem!important;}
+  .fs-0-3rem {font-size: 0.3rem!important;}
+  .fs-0-4rem {font-size: 0.4rem!important;}
+  .fs-0-5rem {font-size: 0.5rem!important;}
+  .fs-0-6rem {font-size: 0.6rem!important;}
+  .fs-0-7rem {font-size: 0.7rem!important;}
+  .fs-0-8rem {font-size: 0.8rem!important;}
+  .fs-0-9rem {font-size: 0.9rem!important;}
+  .fs-1-0rem {font-size: 1.0rem!important;}
+  .fs-1-1rem {font-size: 1.1rem!important;}
+  .fs-1-2rem {font-size: 1.2rem!important;}
+  .fs-1-3rem {font-size: 1.3rem!important;}
+  .fs-1-4rem {font-size: 1.4rem!important;}
+  .fs-1-5rem {font-size: 1.5rem!important;}
+  .fs-1-6rem {font-size: 1.6rem!important;}
+  .fs-1-7rem {font-size: 1.7rem!important;}
+  .fs-1-8rem {font-size: 1.8rem!important;}
+  .fs-1-9rem {font-size: 1.9rem!important;}
+  .fs-2-0rem {font-size: 2.0rem!important;}
+  .fs-2-1rem {font-size: 2.1rem!important;}
+  .fs-2-2rem {font-size: 2.2rem!important;}
+  .fs-2-3rem {font-size: 2.3rem!important;}
+  .fs-2-4rem {font-size: 2.4rem!important;}
+  .fs-2-5rem {font-size: 2.5rem!important;}
+  .fs-2-6rem {font-size: 2.6rem!important;}
+  .fs-2-7rem {font-size: 2.7rem!important;}
+  .fs-2-8rem {font-size: 2.8rem!important;}
+  .fs-2-9rem {font-size: 2.9rem!important;}
+  .fs-3-0rem {font-size: 3.0rem!important;}
+  .fs-3-1rem {font-size: 3.1rem!important;}
+  .fs-3-2rem {font-size: 3.2rem!important;}
+  .fs-3-3rem {font-size: 3.3rem!important;}
+  .fs-3-4rem {font-size: 3.4rem!important;}
+  .fs-3-5rem {font-size: 3.5rem!important;}
+  .fs-3-6rem {font-size: 3.6rem!important;}
+  .fs-3-7rem {font-size: 3.7rem!important;}
+  .fs-3-8rem {font-size: 3.8rem!important;}
+  .fs-3-9rem {font-size: 3.9rem!important;}
+  .fs-4-0rem {font-size: 4.0rem!important;}
+/**/
+
+/**************************************************************************************************/
+/** 2. FONT-WEIGHT ********************************************************************************/
+/**************************************************************************************************/
+/** 2-1. text **/
+  .fw-lighter {font-weight: lighter!important;}
+  .fw-normal {font-weight: normal!important;}
+  .fw-bold {font-weight: bold!important;}
+  .fw-bolder {font-weight: bolder!important;}
+/**/
+
+/** 2-2. number [100 - 900] **/
+  .fw-100 {font-weight: 100!important;}
+  .fw-200 {font-weight: 200!important;}
+  .fw-300 {font-weight: 300!important;}
+  .fw-400 {font-weight: 400!important;}
+  .fw-500 {font-weight: 500!important;}
+  .fw-600 {font-weight: 600!important;}
+  .fw-700 {font-weight: 700!important;}
+  .fw-800 {font-weight: 800!important;}
+  .fw-900 {font-weight: 900!important;}
+/**/
+
+/**************************************************************************************************/
+/** 3. LINE-HEIGHT ********************************************************************************/
+/**************************************************************************************************/
+/** 3-1. number [1 - 4] **/
+  .lh-1-0 {line-height: 1.0!important;}
+  .lh-1-1 {line-height: 1.1!important;}
+  .lh-1-2 {line-height: 1.2!important;}
+  .lh-1-3 {line-height: 1.3!important;}
+  .lh-1-4 {line-height: 1.4!important;}
+  .lh-1-5 {line-height: 1.5!important;}
+  .lh-1-6 {line-height: 1.6!important;}
+  .lh-1-7 {line-height: 1.7!important;}
+  .lh-1-8 {line-height: 1.8!important;}
+  .lh-1-9 {line-height: 1.9!important;}
+  .lh-2-0 {line-height: 2.0!important;}
+  .lh-2-1 {line-height: 2.1!important;}
+  .lh-2-2 {line-height: 2.2!important;}
+  .lh-2-3 {line-height: 2.3!important;}
+  .lh-2-4 {line-height: 2.4!important;}
+  .lh-2-5 {line-height: 2.5!important;}
+  .lh-2-6 {line-height: 2.6!important;}
+  .lh-2-7 {line-height: 2.7!important;}
+  .lh-2-8 {line-height: 2.8!important;}
+  .lh-2-9 {line-height: 2.9!important;}
+  .lh-3-0 {line-height: 3.0!important;}
+  .lh-3-1 {line-height: 3.1!important;}
+  .lh-3-2 {line-height: 3.2!important;}
+  .lh-3-3 {line-height: 3.3!important;}
+  .lh-3-4 {line-height: 3.4!important;}
+  .lh-3-5 {line-height: 3.5!important;}
+  .lh-3-6 {line-height: 3.6!important;}
+  .lh-3-7 {line-height: 3.7!important;}
+  .lh-3-8 {line-height: 3.8!important;}
+  .lh-3-9 {line-height: 3.9!important;}
+  .lh-4-0 {line-height: 4.0!important;}
+/**/
+
+/**************************************************************************************************/
+/** 4. LETTER-SPACING *****************************************************************************/
+/**************************************************************************************************/
+/** 4-1. number [1 - 4] **/
+  .ls-1-0 {letter-spacing: 1.0!important;}
+  .ls-1-1 {letter-spacing: 1.1!important;}
+  .ls-1-2 {letter-spacing: 1.2!important;}
+  .ls-1-3 {letter-spacing: 1.3!important;}
+  .ls-1-4 {letter-spacing: 1.4!important;}
+  .ls-1-5 {letter-spacing: 1.5!important;}
+  .ls-1-6 {letter-spacing: 1.6!important;}
+  .ls-1-7 {letter-spacing: 1.7!important;}
+  .ls-1-8 {letter-spacing: 1.8!important;}
+  .ls-1-9 {letter-spacing: 1.9!important;}
+  .ls-2-0 {letter-spacing: 2.0!important;}
+  .ls-2-1 {letter-spacing: 2.1!important;}
+  .ls-2-2 {letter-spacing: 2.2!important;}
+  .ls-2-3 {letter-spacing: 2.3!important;}
+  .ls-2-4 {letter-spacing: 2.4!important;}
+  .ls-2-5 {letter-spacing: 2.5!important;}
+  .ls-2-6 {letter-spacing: 2.6!important;}
+  .ls-2-7 {letter-spacing: 2.7!important;}
+  .ls-2-8 {letter-spacing: 2.8!important;}
+  .ls-2-9 {letter-spacing: 2.9!important;}
+  .ls-3-0 {letter-spacing: 3.0!important;}
+  .ls-3-1 {letter-spacing: 3.1!important;}
+  .ls-3-2 {letter-spacing: 3.2!important;}
+  .ls-3-3 {letter-spacing: 3.3!important;}
+  .ls-3-4 {letter-spacing: 3.4!important;}
+  .ls-3-5 {letter-spacing: 3.5!important;}
+  .ls-3-6 {letter-spacing: 3.6!important;}
+  .ls-3-7 {letter-spacing: 3.7!important;}
+  .ls-3-8 {letter-spacing: 3.8!important;}
+  .ls-3-9 {letter-spacing: 3.9!important;}
+  .ls-4-0 {letter-spacing: 4.0!important;}
+/**/

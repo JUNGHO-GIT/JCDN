@@ -1,0 +1,219 @@
+/**************************************************************************************************/
+/** 1. COLOR **************************************************************************************/
+/**************************************************************************************************/
+/** 1-1. color **/
+  .red { color: #ff0000!important; }
+  .danger { color: #EF4444!important; }
+  .burgundy { color: #973131!important; }
+  .light-ivory { color: #ede7e3!important; }
+  .ivory { color: #d8caba!important; }
+  .light-yellow { color: #e9e0d1!important; }
+  .yellow { color: #FBBF24!important; }
+  .orange { color: #F59E0B!important; }
+  .warning { color: #F59E0B!important; }
+  .success { color: #10B981!important; }
+  .green { color: #10B981!important; }
+  .info { color: #89e2ff!important; }
+  .primary { color: #1976D2!important; }
+  .blue { color: #3B82F6!important; }
+  .navy { color: #0f2f74!important; }
+  .dark-navy { color: #1f3a80!important; }
+  .darkest-navy { color: #11243f!important; }
+  .white { color: #FFFFFF!important; }
+  .light { color: #f1f5f8!important; }
+  .light-grey { color: #dbdbdb!important; }
+  .grey { color: #9CA3AF!important; }
+  .dark-grey { color: #7e848d!important; }
+  .dark { color: #5e5e5e!important; }
+  .secondary { color: #6c757d!important; }
+  .light-black { color: #3a3a3a!important; }
+  .black { color: #111111!important; }
+/**/
+
+/** 1-2. background-color **/
+  .bg-red { background-color: #ff0000!important; }
+  .bg-danger { background-color: #EF4444!important; }
+  .bg-burgundy { background-color: #973131!important; }
+  .bg-light-ivory { background-color: #ede7e3!important; }
+  .bg-ivory { background-color: #d8caba!important; }
+  .bg-light-yellow { background-color: #e9e0d1!important; }
+  .bg-yellow { background-color: #FBBF24!important; }
+  .bg-orange { background-color: #F59E0B!important; }
+  .bg-warning { background-color: #F59E0B!important; }
+  .bg-success { background-color: #10B981!important; }
+  .bg-green { background-color: #10B981!important; }
+  .bg-info { background-color: #89e2ff!important; }
+  .bg-primary { background-color: #1976D2!important; }
+  .bg-blue { background-color: #3B82F6!important; }
+  .bg-navy { background-color: #0f2f74!important; }
+  .bg-dark-navy { background-color: #1f3a80!important; }
+  .bg-darkest-navy { background-color: #11243f!important; }
+  .bg-white { background-color: #FFFFFF!important; }
+  .bg-light { background-color: #f1f5f8!important; }
+  .bg-light-grey { background-color: #dbdbdb!important; }
+  .bg-grey { background-color: #9CA3AF!important; }
+  .bg-dark-grey { background-color: #7e848d!important; }
+  .bg-dark { background-color: #5e5e5e!important; }
+  .bg-secondary { background-color: #6c757d!important; }
+  .bg-light-black { background-color: #3a3a3a!important; }
+  .bg-black { background-color: #111111!important; }
+/**/
+
+/** 1-3. hover, active **/
+  .pointer-red:hover, .pointer-red.active {
+    cursor: pointer!important;
+    color: #ff0000!important;
+    transition: transform 0.2s ease-in-out!important;
+    transform: scale(1.1)!important;
+  }
+  .pointer-danger:hover, .pointer-danger.active {
+    cursor: pointer!important;
+    color: #EF4444!important;
+    transition: transform 0.2s ease-in-out!important;
+    transform: scale(1.1)!important;
+  }
+  .pointer-burgundy:hover, .pointer-burgundy.active {
+    cursor: pointer!important;
+    color: #973131!important;
+    transition: transform 0.2s ease-in-out!important;
+    transform: scale(1.1)!important;
+  }
+  .pointer-light-ivory:hover, .pointer-light-ivory.active {
+    cursor: pointer!important;
+    color: #ede7e3!important;
+    transition: transform 0.2s ease-in-out!important;
+    transform: scale(1.1)!important;
+  }
+  .pointer-ivory:hover, .pointer-ivory.active {
+    cursor: pointer!important;
+    color: #d8caba!important;
+    transition: transform 0.2s ease-in-out!important;
+    transform: scale(1.1)!important;
+  }
+  .pointer-light-yellow:hover, .pointer-light-yellow.active {
+    cursor: pointer!important;
+    color: #e9e0d1!important;
+    transition: transform 0.2s ease-in-out!important;
+    transform: scale(1.1)!important;
+  }
+  .pointer-yellow:hover, .pointer-yellow.active {
+    cursor: pointer!important;
+    color: #FBBF24!important;
+    transition: transform 0.2s ease-in-out!important;
+    transform: scale(1.1)!important;
+  }
+  .pointer-orange:hover, .pointer-orange.active {
+    cursor: pointer!important;
+    color: #F59E0B!important;
+    transition: transform 0.2s ease-in-out!important;
+    transform: scale(1.1)!important;
+  }
+  .pointer-warning:hover, .pointer-warning.active {
+    cursor: pointer!important;
+    color: #F59E0B!important;
+    transition: transform 0.2s ease-in-out!important;
+    transform: scale(1.1)!important;
+  }
+  .pointer-success:hover, .pointer-success.active {
+    cursor: pointer!important;
+    color: #10B981!important;
+    transition: transform 0.2s ease-in-out!important;
+    transform: scale(1.1)!important;
+  }
+  .pointer-green:hover, .pointer-green.active {
+    cursor: pointer!important;
+    color: #10B981!important;
+    transition: transform 0.2s ease-in-out!important;
+    transform: scale(1.1)!important;
+  }
+  .pointer-info:hover, .pointer-info.active {
+    cursor: pointer!important;
+    color: #89e2ff!important;
+    transition: transform 0.2s ease-in-out!important;
+    transform: scale(1.1)!important;
+  }
+  .pointer-primary:hover, .pointer-primary.active {
+    cursor: pointer!important;
+    color: #1976D2!important;
+    transition: transform 0.2s ease-in-out!important;
+    transform: scale(1.1)!important;
+  }
+  .pointer-blue:hover, .pointer-blue.active {
+    cursor: pointer!important;
+    color: #3B82F6!important;
+    transition: transform 0.2s ease-in-out!important;
+    transform: scale(1.1)!important;
+  }
+  .pointer-navy:hover, .pointer-navy.active {
+    cursor: pointer!important;
+    color: #0f2f74!important;
+    transition: transform 0.2s ease-in-out!important;
+    transform: scale(1.1)!important;
+  }
+  .pointer-dark-navy:hover, .pointer-dark-navy.active {
+    cursor: pointer!important;
+    color: #1f3a80!important;
+    transition: transform 0.1s ease-in-out!important;
+    transform: scale(1.1)!important;
+  }
+  .pointer-darkest-navy:hover, .pointer-darkest-navy.active {
+    cursor: pointer!important;
+    color: #11243f!important;
+    transition: transform 0.1s ease-in-out!important;
+    transform: scale(1.1)!important;
+  }
+  .pointer-white:hover, .pointer-white.active {
+    cursor: pointer!important;
+    color: #FFFFFF!important;
+    transition: transform 0.2s ease-in-out!important;
+    transform: scale(1.1)!important;
+  }
+  .pointer-light:hover, .pointer-light.active {
+    cursor: pointer!important;
+    color: #f1f5f8!important;
+    transition: transform 0.2s ease-in-out!important;
+    transform: scale(1.1)!important;
+  }
+  .pointer-light-grey:hover, .pointer-light-grey.active {
+    cursor: pointer!important;
+    color: #dbdbdb!important;
+    transition: transform 0.2s ease-in-out!important;
+    transform: scale(1.1)!important;
+  }
+  .pointer-grey:hover, .pointer-grey.active {
+    cursor: pointer!important;
+    color: #9CA3AF!important;
+    transition: transform 0.2s ease-in-out!important;
+    transform: scale(1.1)!important;
+  }
+  .pointer-dark-grey:hover, .pointer-dark-grey.active {
+    cursor: pointer!important;
+    color: #7e848d!important;
+    transition: transform 0.2s ease-in-out!important;
+    transform: scale(1.1)!important;
+  }
+  .pointer-dark:hover, .pointer-dark.active {
+    cursor: pointer!important;
+    color: #5e5e5e!important;
+    transition: transform 0.2s ease-in-out!important;
+    transform: scale(1.1)!important;
+  }
+  .pointer-secondary:hover, .pointer-secondary.active {
+    cursor: pointer!important;
+    color: #6c757d!important;
+    transition: transform 0.2s ease-in-out!important;
+    transform: scale(1.1)!important;
+  }
+  .pointer-light-black:hover, .pointer-light-black.active {
+    cursor: pointer!important;
+    color: #3a3a3a!important;
+    transition: transform 0.2s ease-in-out!important;
+    transform: scale(1.1)!important;
+  }
+  .pointer-black:hover, .pointer-black.active {
+    cursor: pointer!important;
+    color: #111111!important;
+    transition: transform 0.2s ease-in-out!important;
+    transform: scale(1.1)!important;
+  }
+/**/
