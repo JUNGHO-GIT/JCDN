@@ -74,6 +74,12 @@ thumbs.db
 # etc
 *push.cjs
 *push.sh
+*fetch.cjs
+*fetch.sh
+*pull.cjs
+*pull.sh
+*merge.cjs
+*merge.sh
 *gcloud.cjs
 *gcloud.sh
 *.gitignore.public
