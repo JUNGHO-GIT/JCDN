@@ -9,6 +9,10 @@ console.log(`Activated OS is : ${winOrLinux}`);
 // git push ----------------------------------------------------------------------------------------
 const gitPush = () => {
   try {
+
+    const gitRmCached = (
+      'git rm -r --cached .'
+    );
     const gitAdd = (
       'git add .'
     );
@@ -18,9 +22,10 @@ const gitPush = () => {
       : 'git commit -m \"$(date +%Y-%m-%d) $(date +%H:%M:%S)\"'
     );
     const gitPush = (
-      'git push origin main'
+      'git push origin master'
     );
 
+    execSync(gitRmCached, { stdio: 'inherit' });
     execSync(gitAdd, { stdio: 'inherit' });
     execSync(gitCommit, { stdio: 'inherit' });
     execSync(gitPush, { stdio: 'inherit' });
