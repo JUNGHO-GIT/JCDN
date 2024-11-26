@@ -28,6 +28,11 @@
   .secondary { color: #6c757d!important; }
   .light-black { color: #3a3a3a!important; }
   .black { color: #111111!important; }
+  .firstScore { color: #1976D2!important; }
+  .secondScore { color: #10B981!important; }
+  .thirdScore { color: #FACC15!important; }
+  .fourthScore { color: #ff7903!important; }
+  .fifthScore { color: #EF4444!important; }
 /**/
 
 /** 1-2. background-color **/
@@ -57,6 +62,11 @@
   .bg-secondary { background-color: #6c757d!important; }
   .bg-light-black { background-color: #3a3a3a!important; }
   .bg-black { background-color: #111111!important; }
+  .bg-firstScore { background-color: #1976D2!important; }
+  .bg-secondScore { background-color: #10B981!important; }
+  .bg-thirdScore { background-color: #FACC15!important; }
+  .bg-fourthScore { background-color: #ff7903!important; }
+  .bg-fifthScore { background-color: #EF4444!important; }
 /**/
 
 /** 1-3. hover, active **/
@@ -213,6 +223,36 @@
   .pointer-black:hover, .pointer-black.active {
     cursor: pointer!important;
     color: #111111!important;
+    transition: transform 0.2s ease-in-out!important;
+    transform: scale(1.1)!important;
+  }
+  .pointer-firstScore:hover, .pointer-firstScore.active {
+    cursor: pointer!important;
+    color: #1976D2!important;
+    transition: transform 0.2s ease-in-out!important;
+    transform: scale(1.1)!important;
+  }
+  .pointer-secondScore:hover, .pointer-secondScore.active {
+    cursor: pointer!important;
+    color: #10B981!important;
+    transition: transform 0.2s ease-in-out!important;
+    transform: scale(1.1)!important;
+  }
+  .pointer-thirdScore:hover, .pointer-thirdScore.active {
+    cursor: pointer!important;
+    color: #FACC15!important;
+    transition: transform 0.2s ease-in-out!important;
+    transform: scale(1.1)!important;
+  }
+  .pointer-fourthScore:hover, .pointer-fourthScore.active {
+    cursor: pointer!important;
+    color: #ff7903!important;
+    transition: transform 0.2s ease-in-out!important;
+    transform: scale(1.1)!important;
+  }
+  .pointer-fifthScore:hover, .pointer-fifthScore.active {
+    cursor: pointer!important;
+    color: #EF4444!important;
     transition: transform 0.2s ease-in-out!important;
     transform: scale(1.1)!important;
   }
