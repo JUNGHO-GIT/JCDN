@@ -6,7 +6,6 @@
   "license": "Apache-2.0",
   "private": true,
   "scripts": {
-    "merge": "node merge.cjs",
     "npm-reset": "powershell -Command \"Remove-Item -Recurse -Force package-lock.json, node_modules; npm install --legacy-peer-deps;\"",
     "gcloud": "node gcloud.cjs"
   },
