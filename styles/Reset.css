@@ -3,17 +3,6 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
   padding: 0;
   border: 0;
   font: inherit;
-  vertical-align: baseline;
-  text-decoration: none;
-  list-style: none;
-  color: inherit;
-  background: transparent;
-  text-align: center;
-  direction: ltr;
-  white-space: normal;
-  word-spacing: normal;
-  line-height: normal;
-  text-transform: none;
   box-sizing: border-box;
 }
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
