@@ -85,7 +85,7 @@
     align-items: flex-end!important;
     text-align: center!important;
   }
-  .d-column {
+  .d-col {
     display: flex!important;
     flex-direction: column!important;
   }

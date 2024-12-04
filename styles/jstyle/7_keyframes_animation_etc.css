@@ -41,6 +41,20 @@
       transform: translateY(0)
     }
   }
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+      transform: translateY(0)
+    }
+    50% {
+      opacity: .5;
+      transform: translateY(-3px)
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(30px)
+    }
+  }
   @keyframes shake {
     0%,100% {
       transform: translateX(0)
@@ -62,6 +76,7 @@
 
 /** 1-2. animation **/
   .fadeIn {animation: fadeIn 0.5s cubic-bezier(.42,0,.58,1)!important;}
+  .fadeOut {animation: fadeOut 0.5s cubic-bezier(.42,0,.58,1)!important;}
   .snackbar {animation: fadeIn 0.1s cubic-bezier(.42,0,.58,1)!important;}
   .shake {animation: shake 0.7s cubic-bezier(.36,.07,.19,.97) both!important;}
   .initLoader {animation: initLoader 0.0000001ms ease-in-out!important;}
