@@ -20,8 +20,8 @@
   .dark-navy { color: #1f3a80!important; }
   .darkest-navy { color: #11243f!important; }
   .white { color: #FFFFFF!important; }
+  .dark-white { color: #eaeaea !important; }
   .light { color: #f1f5f8!important; }
-  .light-white { color: #eaeaea !important; }
   .light-grey { color: #dbdbdb!important; }
   .grey { color: #9CA3AF!important; }
   .dark-grey { color: #7e848d!important; }
@@ -55,8 +55,8 @@
   .bg-dark-navy { background-color: #1f3a80!important; }
   .bg-darkest-navy { background-color: #11243f!important; }
   .bg-white { background-color: #FFFFFF!important; }
+  .bg-dark-white { background-color: #eaeaea!important; }
   .bg-light { background-color: #f1f5f8!important; }
-  .bg-light-white { background-color: #eaeaea!important; }
   .bg-light-grey { background-color: #dbdbdb!important; }
   .bg-grey { background-color: #9CA3AF!important; }
   .bg-dark-grey { background-color: #7e848d!important; }
@@ -180,15 +180,15 @@
     transition: transform 0.2s ease-in-out!important;
     transform: scale(1.1)!important;
   }
-  .pointer-light:hover, .pointer-light.active {
+  .pointer-dark-white:hover, .pointer-dark-white.active {
     cursor: pointer!important;
-    color: #f1f5f8!important;
+    color: #eaeaea!important;
     transition: transform 0.2s ease-in-out!important;
     transform: scale(1.1)!important;
   }
-  .pointer-light-white:hover, .pointer-light-white.active {
+  .pointer-light:hover, .pointer-light.active {
     cursor: pointer!important;
-    color: #eaeaea!important;
+    color: #f1f5f8!important;
     transition: transform 0.2s ease-in-out!important;
     transform: scale(1.1)!important;
   }
