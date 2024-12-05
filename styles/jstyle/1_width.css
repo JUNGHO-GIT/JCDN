@@ -1465,6 +1465,12 @@
   .w-150vw {width: 150vw!important;}
 /**/
 
+/** 1-4. etc **/
+  .w-webkit-fill {width: -webkit-fill-available !important;}
+  .w-webkit-max {width: -webkit-max-content !important;}
+  .w-webkit-min {width: -webkit-min-content !important;}
+  .w-webkit-fit {width: -webkit-fit-content !important;}
+/**/
 
 /**************************************************************************************************/
 /** 2. MIN ****************************************************************************************/

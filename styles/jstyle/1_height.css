@@ -1466,6 +1466,12 @@
   .h-150vh {height: 150vh!important;}
 /**/
 
+/** 1-4. etc **/
+  .h-webkit-fill {height: -webkit-fill-available !important;}
+  .h-webkit-max {height: -webkit-max-content !important;}
+  .h-webkit-min {height: -webkit-min-content !important;}
+  .h-webkit-fit {height: -webkit-fit-content !important;}
+/**/
 
 /**************************************************************************************************/
 /** 2. MIN ****************************************************************************************/

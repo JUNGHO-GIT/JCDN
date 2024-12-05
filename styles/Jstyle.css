@@ -1468,6 +1468,12 @@
   .h-150vh {height: 150vh!important;}
 /**/
 
+/** 1-4. etc **/
+  .h-webkit-fill {height: -webkit-fill-available !important;}
+  .h-webkit-max {height: -webkit-max-content !important;}
+  .h-webkit-min {height: -webkit-min-content !important;}
+  .h-webkit-fit {height: -webkit-fit-content !important;}
+/**/
 
 /**************************************************************************************************/
 /** 2. MIN ****************************************************************************************/
@@ -5572,6 +5578,12 @@
   .w-150vw {width: 150vw!important;}
 /**/
 
+/** 1-4. etc **/
+  .w-webkit-fill {width: -webkit-fill-available !important;}
+  .w-webkit-max {width: -webkit-max-content !important;}
+  .w-webkit-min {width: -webkit-min-content !important;}
+  .w-webkit-fit {width: -webkit-fit-content !important;}
+/**/
 
 /**************************************************************************************************/
 /** 2. MIN ****************************************************************************************/
