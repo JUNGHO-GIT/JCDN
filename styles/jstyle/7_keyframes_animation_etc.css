@@ -220,3 +220,29 @@
     background-color: #ccc!important;
   }
 /**/
+
+/**************************************************************************************************/
+/** 4. ETC ****************************************************************************************/
+/**************************************************************************************************/
+[class^="container"] {
+  padding: 0;
+  margin: 0;
+  max-width: 100vw;
+  height: 100%;
+  display: -webkit-flex;
+}
+[class^="row"] {
+  padding: 0;
+  margin: 0;
+  max-width: 100vw;
+  display: -webkit-flex;
+}
+[class^="col-"] {
+  padding: 0;
+  margin: 0;
+  max-width: 100vw;
+  display: -webkit-flex;
+}
+button:focus {
+  outline: none !important;
+}
