@@ -1,5 +1,6 @@
-@charset "UTF-8";
-
+* {
+  font-family: "Pretendard Variable", Pretendard, "Noto Sans KR", Roboto, sans-serif !important;
+}
 html, body {
   width: 100%;
   height: 100%;
@@ -12,7 +13,6 @@ html, body {
   -moz-osx-font-smoothing: grayscale !important;
   -webkit-text-size-adjust: 100% !important;
   -ms-text-size-adjust: 100% !important;
-  font-family: "Pretendard Variable", Pretendard, "Noto Sans KR", Roboto, sans-serif !important;
 }
 
 /** 1. xxs (0 - 330px) ****************************************************************************/
