@@ -6,11 +6,11 @@ html, body {
   z-index: auto;
   position: relative;
   letter-spacing: 1px;
+  text-size-adjust: 100% !important;
   -webkit-font-smoothing: antialiased !important;
   -moz-osx-font-smoothing: grayscale !important;
   -webkit-text-size-adjust: 100% !important;
-  text-size-adjust: 100% !important;
-  font-family: "Pretendard Variable", Pretendard, "Font Awesome 5 Pro", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  font-family: "Pretendard Variable", Pretendard, "Font Awesome 5 Brands", "Font Awesome 5 Free", "Font Awesome 5", "Font Awesome 4 Brands", "Font Awesome 4 Free","Font Awesome 4", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
 }
 
 /** 1. xxs (0 - 330px) ****************************************************************************/
