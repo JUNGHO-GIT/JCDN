@@ -2,7 +2,6 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
   margin: 0;
   padding: 0;
   border: 0;
-  font: inherit;
   box-sizing: border-box;
 }
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
