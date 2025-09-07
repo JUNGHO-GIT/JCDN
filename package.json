@@ -1,13 +1,13 @@
 {
   "name": "JCDN",
   "version": "1.0.0",
-  "main": "index.ts",
-  "type": "module",
-  "license": "Apache-2.0",
   "private": true,
+  "type": "module",
+  "main": "index.ts",
+  "license": "Apache-2.0",
   "scripts": {
-    "npm-reset": "powershell -Command \"Remove-Item -Recurse -Force package-lock.json, node_modules; npm install --legacy-peer-deps;\"",
-    "gcloud": "node gcloud.cjs"
+    "gcloud-deploy": "node .gcloud_deploy.cjs --full-deploy",
+    "pnpm-reset": "pwsh -NoProfile -Command \"try { Stop-Process -Name node -Force -ErrorAction SilentlyContinue } catch {}; Start-Sleep -Milliseconds 200; if (Test-Path 'node_modules') { cmd /c 'rd /s /q \"node_modules\"' } ; if (Test-Path 'package-lock.json') { cmd /c 'del /f /q \"package-lock.json\"' } ; pnpm install\""
   },
   "devDependencies": {
     "@types/clean-css": "^4.2.11",
