@@ -6,12 +6,12 @@
   "main": "index.ts",
   "license": "Apache-2.0",
   "scripts": {
-    "gcloud-deploy": "node .gcloud_deploy.cjs --full-deploy",
+    "gcloud-deploy": "node .node/gcloud.cjs --full-deploy",
     "pnpm-reset": "pwsh -NoProfile -Command \"try { Stop-Process -Name node -Force -ErrorAction SilentlyContinue } catch {}; Start-Sleep -Milliseconds 200; if (Test-Path 'node_modules') { cmd /c 'rd /s /q \"node_modules\"' } ; if (Test-Path 'package-lock.json') { cmd /c 'del /f /q \"package-lock.json\"' } ; pnpm install\""
   },
   "devDependencies": {
     "@types/clean-css": "^4.2.11",
-    "@types/node": "^22.10.0"
+    "@types/node": "^24.3.1"
   },
   "dependencies": {
     "clean-css": "^5.3.3"
