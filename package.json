@@ -1,18 +1,19 @@
 {
-  "name": "JCDN",
+  "name": "jcdn",
   "version": "1.0.0",
   "private": true,
   "type": "module",
   "main": "index.ts",
   "license": "Apache-2.0",
   "scripts": {
+		"merge": "node .node/merge.cjs",
 		"reset": "node .node/reset.cjs --pnpm",
-		"autofix": "node .node/autofix.cjs",
-		"gcloud": "node .node/gcloud.cjs"
+		"autofix": "node .node/autofix.cjs --fix",
+		"gcloud": "node .node/gcloud.cjs --git"
   },
   "devDependencies": {
     "@types/clean-css": "^4.2.11",
-    "@types/node": "^24.6.1"
+    "@types/node": "^24.10.1"
   },
   "dependencies": {
     "clean-css": "^5.3.3"
