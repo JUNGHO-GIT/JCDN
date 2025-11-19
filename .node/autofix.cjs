@@ -5,51 +5,12 @@ const fs = require(`fs`);
 const path = require(`path`);
 const process = require(`process`);
 const { Project } = require(`ts-morph`);
+const { logger, trySpawn } = require(`./utils.cjs`);
 
 // 인자 파싱 ------------------------------------------------------------------------------------
 const argv = process.argv.slice(2);
 const isFix = argv.includes(`--fix`);
 const LINE_REGEX = /^(?<file>.+):(?<line>\d+)\s*-\s*(?<name>.+?)(?:\s*\((?<note>.+)\))?$/;
-
-// 로깅 함수 -----------------------------------------------------------------------------------
-const logger = (type = ``, ...args) => {
-	const format = (text = ``) => text.trim().replace(/^\s+/gm, ``);
-	const line = `----------------------------------------`;
-	const colors = {
-		"line": `\x1b[38;5;214m`,
-		"info": `\x1b[36m`,
-		"success": `\x1b[32m`,
-		"warn": `\x1b[33m`,
-		"error": `\x1b[31m`,
-		"reset": `\x1b[0m`
-	};
-	const separator = `${colors.line}${line}${colors.reset}`;
-	const message = String(args[0] || ``);
-
-	(type === `info`) ? (
-		console.log(format(`
-			${separator}
-			${colors.info}[INFO]${colors.reset} - ${message}
-		`))
-	) : (type === `success`) ? (
-		console.log(format(`
-			${separator}
-			${colors.success}[SUCCESS]${colors.reset} - ${message}
-		`))
-	) : (type === `warn`) ? (
-		console.log(format(`
-			${separator}
-			${colors.warn}[WARN]${colors.reset} - ${message}
-		`))
-	) : (type === `error`) ? (
-		console.log(format(`
-			${separator}
-			${colors.error}[ERROR]${colors.reset} - ${message}
-		`))
-	) : (
-		void 0
-	);
-};
 
 // 명령 실행 함수 ------------------------------------------------------------------------------
 const run = (cmd = ``, args = []) => {
@@ -67,29 +28,6 @@ const run = (cmd = ``, args = []) => {
 	) : (
 		logger(`success`, `${cmd} 실행 완료`)
 	);
-};
-
-
-// 유틸리티 함수 -------------------------------------------------------------------------------
-const withLocalBinOnPath = (env = {}) => {
-	const binDir = path.join(process.cwd(), `node_modules`, `.bin`);
-	const envPath = (env.PATH || env.Path || ``);
-	const pathParts = envPath.split(path.delimiter).filter(Boolean);
-	(!pathParts.includes(binDir)) ? pathParts.unshift(binDir) : void 0;
-
-	const newEnv = ({ ...env });
-	(process.platform === `win32`) ? (
-		newEnv.Path = pathParts.join(path.delimiter)
-	) : (
-		newEnv.PATH = pathParts.join(path.delimiter)
-	);
-	return newEnv;
-};
-
-const trySpawn = (cmd = ``, args = []) => {
-	const options = { encoding: `utf8`, env: withLocalBinOnPath(process.env) };
-	const result = spawnSync(cmd, args, options);
-	return result;
 };
 
 // -----------------------------------------------------------------------------------------------

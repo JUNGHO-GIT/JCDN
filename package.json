@@ -1,15 +1,17 @@
 {
   "name": "jcdn",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "type": "module",
   "main": "index.ts",
   "license": "Apache-2.0",
   "scripts": {
-		"merge": "node .node/merge.cjs",
-		"reset": "node .node/reset.cjs --pnpm",
-		"autofix": "node .node/autofix.cjs --fix",
-		"gcloud": "node .node/gcloud.cjs --git"
+    "watch": "bun .node/swc.cjs --bun --watch",
+    "compile": "bun .node/swc.cjs --bun --compile",
+    "reset": "bun .node/reset.cjs --bun --reset",
+    "fix": "bun .node/fix.cjs --bun --fix",
+    "gcloud": "bun .node/gcloud.cjs --bun --deploy",
+    "vsce": "bun .node/vsce.cjs --bun --package"
   },
   "devDependencies": {
     "@types/clean-css": "^4.2.11",
