@@ -1,6 +1,6 @@
 {
   "name": "jcdn",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "private": true,
   "type": "module",
   "main": "index.ts",
@@ -10,8 +10,7 @@
     "compile": "bun .node/swc.cjs --bun --compile",
     "reset": "bun .node/reset.cjs --bun --reset",
     "fix": "bun .node/fix.cjs --bun --fix",
-    "gcloud": "bun .node/gcloud.cjs --bun --deploy",
-    "vsce": "bun .node/vsce.cjs --bun --package"
+    "gcloud": "bun .node/gcloud.cjs --bun --deploy"
   },
   "devDependencies": {
     "@types/clean-css": "^4.2.11",
