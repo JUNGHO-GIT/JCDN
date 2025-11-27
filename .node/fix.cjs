@@ -1,10 +1,13 @@
-// fix.cjs
+/**
+ * @file fix.cjs
+ * @since 2025-11-22
+ */
 
 const fs = require(`fs`);
 const path = require(`path`);
 const process = require(`process`);
 const { Project } = require(`ts-morph`);
-const { logger, spawnWrapper } = require(`./bundle.cjs`);
+const { logger, spawnWrapper } = require(`./utils.cjs`);
 
 // 인자 파싱 ------------------------------------------------------------------------------------
 const TITLE = `fix.cjs`;

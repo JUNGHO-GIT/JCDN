@@ -1,15 +1,20 @@
 {
   "name": "jcdn",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "private": true,
   "type": "module",
   "main": "index.ts",
   "license": "Apache-2.0",
   "scripts": {
-    "watch": "bun .node/swc.cjs --bun --watch",
-    "compile": "bun .node/swc.cjs --bun --compile",
-    "reset": "bun .node/reset.cjs --bun --reset",
+    "start-client": "bun .node/swc.cjs --bun --start --client",
+    "start-server": "bun .node/swc.cjs --bun --start --server",
+    "build-client": "bun .node/swc.cjs --bun --build --client",
+    "build-server": "bun .node/swc.cjs --bun --build --server",
+    "git-fetch": "bun .node/git.cjs --bun --fetch",
+    "git-push": "bun .node/git.cjs --bun --push",
     "fix": "bun .node/fix.cjs --bun --fix",
+    "reset": "bun .node/reset.cjs --bun --reset",
+    "vsce": "bun .node/vsce.cjs --bun --package",
     "gcloud": "bun .node/gcloud.cjs --bun --deploy"
   },
   "devDependencies": {

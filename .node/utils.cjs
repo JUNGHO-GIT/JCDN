@@ -1,40 +1,76 @@
-// bundle.cjs
+/**
+ * @file utils.cjs
+ * @since 2025-11-22
+ */
 
 const fs = require(`fs`);
 const path = require(`path`);
 const { spawnSync } = require(`child_process`);
 
+// ----------------------------------------------------------------------------------------
+const formatLog = (text = ``) => {
+	return text.trim().replace(/^\s+/gm, ``);
+};
+
 // 로깅 -----------------------------------------------------------------------------------
 // @ts-ignore
-const logger = (type = ``, message = ``) => {
-	const format = (text = ``) => text.trim().replace(/^\s+/gm, ``);
-	const line = `----------------------------------------`;
-	const colors = {
-		line: `\x1b[38;5;214m`,
-		info: `\x1b[36m`,
-		success: `\x1b[32m`,
-		warn: `\x1b[33m`,
-		error: `\x1b[31m`,
-		reset: `\x1b[0m`
+const logger = (
+	type = ``,
+	value = ``
+) => {
+	const config = {
+		line: {
+			str: `-----------------------------------------`,
+			color: `\u001b[38;2;255;162;0m`,
+		},
+		debug: {
+			str: `[DEBUG]`,
+			color: `\u001b[38;5;141m`,
+		},
+		info: {
+			str: `[INFO]`,
+			color: `\u001b[38;5;46m`,
+		},
+		hint: {
+			str: `[HINT]`,
+			color: `\u001b[38;5;39m`,
+		},
+		warn: {
+			str: `[WARN]`,
+			color: `\u001b[38;5;214m`,
+		},
+		error: {
+			str: `[ERROR]`,
+			color: `\u001b[38;5;196m`,
+		},
+		reset: {
+			str: ``,
+			color: `\u001b[0m`,
+		},
 	};
-	const separator = `${colors.line}${line}${colors.reset}`;
+	const separator = `${config.reset.color}${config.line.color}${config.line.str}${config.reset.color}`;
+	const level = `${config.reset.color}${config?.[type]?.color ?? ``}${config?.[type]?.str ?? ``}${config.reset.color}`;
+	const fmtMsg = formatLog(`
+		${separator}
+		${level}
+		${value}
+	`);
 
-	type === `info` && console.log(format(`
-		${separator}
-		${colors.info}[INFO]${colors.reset} - ${message}
-	`));
-	type === `success` && console.log(format(`
-		${separator}
-		${colors.success}[SUCCESS]${colors.reset} - ${message}
-	`));
-	type === `warn` && console.log(format(`
-		${separator}
-		${colors.warn}[WARN]${colors.reset} - ${message}
-	`));
-	type === `error` && console.log(format(`
-		${separator}
-		${colors.error}[ERROR]${colors.reset} - ${message}
-	`));
+	type === `debug` && (
+		console.debug(fmtMsg)
+	);
+	type === `info` && (
+		console.info(fmtMsg)
+	);
+	type === `hint` && (
+		console.log(fmtMsg)
+	);
+	type === `warn` && (
+		console.warn(fmtMsg)
+	);
+	type === `error` && (
+		console.error(fmtMsg)
+	);
 };
 
 // 명령 실행 ------------------------------------------------------------------------------
@@ -218,6 +254,46 @@ const delDir = (tp = ``, pat = ``) => {
 	return result;
 };
 
+// 프로젝트 타입 검증 --------------------------------------------------------------------------
+// @ts-ignore
+const getProjectType = (args) => {
+	const isClient = args === `client`;
+	const isServer = args === `server`;
+
+	const hasFile = (filePath = ``) => {
+		const absPath = path.isAbsolute(filePath) ? filePath : path.join(process.cwd(), filePath);
+		return fs.existsSync(absPath);
+	};
+
+	!isClient && !isServer && (
+		logger(`error`, `프로젝트 타입을 지정해주세요: --client 또는 --server`),
+		process.exit(1)
+	);
+
+	const viteConfigFiles = [`vite.config.ts`, `vite.config.js`, `vite.config.mts`, `vite.config.mjs`];
+	const hasVite = viteConfigFiles.some(file => hasFile(file));
+	const hasNext = hasFile(`next.config.js`) || hasFile(`next.config.mjs`);
+	const hasReactScripts = hasFile(path.join(`node_modules`, `react-scripts`, `bin`, `react-scripts.js`));
+	const hasIndexTs = hasFile(`index.ts`);
+
+	isClient && !hasVite && !hasNext && !hasReactScripts && (
+		logger(`warn`, `클라이언트 설정 파일을 찾을 수 없습니다 (vite.config, next.config, react-scripts)`)
+	);
+
+	isServer && !hasIndexTs && (
+		logger(`warn`, `서버 진입점 파일을 찾을 수 없습니다 (index.ts)`)
+	);
+
+	return {
+		isClient,
+		isServer,
+		hasVite,
+		hasNext,
+		hasReactScripts,
+		hasIndexTs
+	};
+};
+
 // 모듈 내보내기 -------------------------------------------------------------------------------
 module.exports = {
 	logger,
@@ -227,5 +303,6 @@ module.exports = {
 	createFile,
 	createDir,
 	delFile,
-	delDir
+	delDir,
+	getProjectType
 };
