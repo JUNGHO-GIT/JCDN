@@ -1,5 +1,23 @@
 # .gitattributes
+# ==================================================================================================
+# Binary files (MUST COME FIRST)
+# ==================================================================================================
+*.woff  binary
+*.woff2 binary
+*.ttf   binary
+*.otf   binary
+*.eot   binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.webp  binary
+*.svg   binary
+*.ico   binary
 
+# ==================================================================================================
+# Text default
+# ==================================================================================================
 * text eol=lf
 *.json linguist-vendored linguist-generated
 *.json.* linguist-vendored linguist-generated
