@@ -1,27 +1,20 @@
 {
   "name": "jcdn",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "private": true,
   "type": "module",
   "main": "index.ts",
   "license": "Apache-2.0",
   "scripts": {
-    "start-client": "bun .node/swc.cjs --bun --start --client",
-    "start-server": "bun .node/swc.cjs --bun --start --server",
-    "build-client": "bun .node/swc.cjs --bun --build --client",
-    "build-server": "bun .node/swc.cjs --bun --build --server",
-    "git-fetch": "bun .node/git.cjs --bun --fetch",
-    "git-push": "bun .node/git.cjs --bun --push",
     "fix": "bun .node/fix.cjs --bun --fix",
     "reset": "bun .node/reset.cjs --bun --reset",
-    "vsce": "bun .node/vsce.cjs --bun --package",
-    "gcloud": "bun .node/gcloud.cjs --bun --deploy"
+    "merge": "bun .node/merge.cjs --bun",
+    "git-fetch": "bun .node/git.cjs --bun --fetch",
+    "git-push": "bun .node/git.cjs --bun --push"
   },
   "devDependencies": {
+    "clean-css": "^5.3.3",
     "@types/clean-css": "^4.2.11",
     "@types/node": "^24.10.1"
-  },
-  "dependencies": {
-    "clean-css": "^5.3.3"
   }
 }
