@@ -178,7 +178,7 @@ const clearGitCache = () => {
 		logger(`success`, `Git 캐시 초기화 완료`);
 	}
 	catch (e) {
-		logger(`error`, `Git 캐시 초���화 실패: ${e instanceof Error ? e.message : String(e)}`);
+		logger(`error`, `Git 캐시 초기화 실패: ${e instanceof Error ? e.message : String(e)}`);
 		throw e;
 	}
 };
@@ -217,7 +217,7 @@ const modifyEnvAndIndex = () => {
 			}
 		];
 		fs.writeFileSync(`.env`, transformLines(envContent, envRules));
-		logger(`info`, `.env 파일 수정 완���`);
+		logger(`info`, `.env 파일 수정 완료`);
 	})();
 
 	indexExists && (() => {
