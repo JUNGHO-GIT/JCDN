@@ -1,6 +1,6 @@
 {
   "name": "jcdn",
-  "version": "1.2.9",
+  "version": "1.3.0",
   "private": true,
   "type": "module",
   "main": "index.ts",
@@ -12,8 +12,8 @@
     "fix": "bun .node/mjs/fix.mjs --bun --fix",
     "reset": "bun .node/mjs/reset.mjs --bun --reset",
     "vsce": "bun .node/mjs/vsce.mjs --bun --package",
-    "git-push-my": "bun .node/mjs/git.mjs --bun --push --my",
-    "git-push-mn": "bun .node/mjs/git.mjs --bun --push --mn",
+    "git-push-y": "bun .node/mjs/git.mjs --bun --push --y",
+    "git-push-n": "bun .node/mjs/git.mjs --bun --push --n",
     "merge": "bun .node/mjs/merge.mjs --bun"
   },
   "devDependencies": {
