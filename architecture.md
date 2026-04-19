@@ -1,17 +1,27 @@
 # JCDN Architecture
 
-## 목적
-정적 자산을 분류된 폴더 구조로 관리하고 필요한 보조 코드를 함께 유지한다.
+## Structure Map
 
-## 구성
-- `styles/`, `style/`: 스타일 자산과 호환 경로
-- `fonts/`, `font/`: 폰트 자산과 호환 경로
-- 루트 설정 파일: 정리와 검증 보조
+```text
+JCDN
+|-- fonts/           -> canonical font assets
+|-- font/            -> compatibility font path
+|-- styles/          -> canonical stylesheet assets
+|-- style/           -> compatibility style path
+`-- package.json     -> package metadata
+```
 
-## 흐름
-1. 자산을 유형별 폴더에 정리한다.
-2. 보조 코드와 설정으로 일관성을 유지한다.
-3. 결과 자산을 정적 묶음으로 사용한다.
+## Flow Map
 
-## 경계
-- 외부 배포 대상, 저장소 외부 경로, 운영 세부사항은 문서화하지 않는다.
+```text
+Asset source file
+  -> stored in canonical fonts/ or styles/
+  -> mirrored by compatibility path when needed
+  -> consumed by downstream projects
+```
+
+## Boundaries
+
+- Asset folders are the maintained source surface.
+- Compatibility folders preserve existing consumers.
+- Hosting and CDN rollout are downstream concerns.

@@ -65,6 +65,7 @@
 **/.history/
 **/.backup/
 **/.bookmark/
+**/.tmp/
 **/.grunt/
 **/.gulp/
 
@@ -103,6 +104,8 @@
 
 # 3. Secrets / env / credentials
 # 3-1. env files
+/.env
+/.env.*
 **/.env*
 **/.envrc
 
@@ -144,10 +147,15 @@
 
 # 5. Temporary / patch files
 **/*.tmp
+**/*.tmp.*
 **/*.bak
+**/*.bak.*
 **/*.backup
+**/*.backup.*
 **/*.orig
+**/*.orig.*
 **/*.rej
+**/*.rej.*
 **/*.pid
 **/*.pid.*
 **/*.seed
@@ -155,11 +163,17 @@
 
 # 6. Lock files (common)
 **/package-lock.json
+**/package-lock.json.*
 **/npm-shrinkwrap.json
+**/npm-shrinkwrap.json.*
 **/yarn.lock
+**/yarn.lock.*
 **/pnpm-lock.yaml
+**/pnpm-lock.yaml.*
 **/bun.lockb
+**/bun.lockb.*
 **/bun.lock
+**/bun.lock.*
 
 # 7. Node/TS build metadata
 **/*.tsbuildinfo
@@ -170,9 +184,5 @@
 **/ecosystem.config.js
 **/ecosystem.config.*
 
-# 9. Legacy renamed env modules
-**/.node/env.mjs
-**/public/lib/env.mjs
-**/private/lib/env.mjs
-**/public/ps1-mjs/lib/env.mjs
-**/private/ps1-mjs/lib/env.mjs
+# 99. case of env
+**/*[eE][nN][vV]*

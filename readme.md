@@ -1,12 +1,17 @@
 # JCDN
 
-## 개요
-정적 스타일과 폰트 자산을 정리하는 저장소다.
+## Overview
 
-## 핵심 구성
-- `styles/`: 스타일 자산
-- `fonts/`: 폰트 자산
-- `index.ts`: 보조 진입 파일
+JCDN stores static style and font assets that are consumed as a shared bundle by
+other projects in this workspace.
 
-## 비고
-- 실제 배포 위치와 외부 제공 방식은 문서에서 제외한다.
+## Structure
+
+* `styles/` and `style/` keep stylesheet assets and compatibility paths
+* `fonts/` and `font/` keep font assets and compatibility paths
+* root config files describe package metadata and sync behavior
+
+## Notes
+
+* The repository is asset-focused and does not expose a large runtime surface.
+* Deployment endpoints and hosting details are intentionally excluded.
