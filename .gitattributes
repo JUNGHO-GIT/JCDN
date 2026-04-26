@@ -2,6 +2,17 @@
 
 * text eol=lf
 
+*.ico -text
+*.png -text
+*.jpg -text
+*.jpeg -text
+*.gif -text
+*.webp -text
+*.woff -text
+*.woff2 -text
+*.ttf -text
+*.otf -text
+
 # Directories --------------------------------------------------------------------------------
 
 # 1. Build outputs
