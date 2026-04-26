@@ -1,9 +1,9 @@
-# JCDN Architecture
+# dev-cdn Architecture
 
 ## Structure Map
 
 ```text
-JCDN
+dev-cdn
 |-- fonts/           -> canonical font assets
 |-- font/            -> compatibility font path
 |-- styles/          -> canonical stylesheet assets

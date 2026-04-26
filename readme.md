@@ -1,8 +1,8 @@
-# JCDN
+# dev-cdn
 
 ## Overview
 
-JCDN stores static style and font assets that are consumed as a shared bundle by
+dev-cdn stores static style and font assets that are consumed as a shared bundle by
 other projects in this workspace.
 
 ## Structure
