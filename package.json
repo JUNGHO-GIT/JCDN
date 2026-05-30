@@ -1,0 +1,30 @@
+{
+  "name": "dev-cdn",
+  "version": "1.4.2",
+  "private": true,
+  "type": "module",
+  "main": "index.ts",
+  "license": "Apache-2.0",
+  "scripts": {
+    "git": "bun run ~/.bootstrap/bootstrap-sync.ts --git",
+    "swc": "bun run ~/.bootstrap/bootstrap-sync.ts --swc",
+    "sync": "bun run ~/.bootstrap/bootstrap-sync.ts --sync",
+    "tools": "bun run ~/.bootstrap/bootstrap-sync.ts --tools"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.4.13",
+    "@clack/prompts": "^1.2.0",
+    "@swc/cli": "0.8.1",
+    "@swc/core": "1.15.26",
+    "@swc/helpers": "0.5.21",
+    "@types/clean-css": "^4.2.11",
+    "@types/node": "25.6.0",
+    "clean-css": "^5.3.3",
+    "esbuild": "0.28.0",
+    "globals": "^17.5.0",
+    "ts-morph": "28.0.0",
+    "ts-prune": "0.10.3",
+    "tsc-alias": "1.8.16",
+    "typescript": "6.0.3"
+  }
+}
