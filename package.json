@@ -1,14 +1,15 @@
 {
   "name": "dev-cdn",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "private": true,
   "type": "module",
   "main": "index.ts",
   "license": "Apache-2.0",
   "scripts": {
-    "git": "bun ~/.bootstrap/bootstrap-sync.mjs --git",
-    "sync": "bun ~/.bootstrap/bootstrap-sync.mjs --sync",
-    "tools": "bun ~/.bootstrap/bootstrap-sync.mjs --tools"
+    "git": "bun run ~/.bootstrap/bootstrap-sync.ts --git",
+    "swc": "bun run ~/.bootstrap/bootstrap-sync.ts --swc",
+    "sync": "bun run ~/.bootstrap/bootstrap-sync.ts --sync",
+    "tools": "bun run ~/.bootstrap/bootstrap-sync.ts --tools"
   },
   "devDependencies": {
     "@biomejs/biome": "2.4.13",
