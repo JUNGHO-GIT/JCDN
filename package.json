@@ -19,7 +19,7 @@
     "@types/clean-css": "^4.2.11",
     "@types/node": "25.6.0",
     "clean-css": "^5.3.3",
-    "esbuild": "0.28.0",
+    "esbuild": "0.28.1",
     "globals": "^17.5.0",
     "ts-morph": "28.0.0",
     "ts-prune": "0.10.3",
